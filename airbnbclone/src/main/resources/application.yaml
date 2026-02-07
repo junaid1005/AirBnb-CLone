@@ -1,3 +1,18 @@
 spring:
   application:
     name: airbnbclone
+  datasource:
+    url: jdbc:postgresql://localhost:5432/airBnb
+    username: 
+    password:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create   # options: none, validate, update, create, create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+
